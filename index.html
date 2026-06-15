@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Cricket Duel · Bat & Ball Showdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🏏 CRICKET DUEL 🏏</h1>
+            <div class="game-sub">✦ BAT · BALL · STUMP ✦</div>
+        </div>
+
+        <div class="score-panel">
+            <div class="score-card">
+                <div class="score-label">🏆 YOU</div>
+                <div class="score-value" id="playerScoreDisplay">0</div>
+            </div>
+            <div class="score-card">
+                <div class="score-label">🤖 COMPUTER</div>
+                <div class="score-value" id="computerScoreDisplay">0</div>
+            </div>
+        </div>
+
+        <div class="result-area" id="resultArea">
+            <div id="roundWinnerMsg" class="round-result">🏏 READY? 🏏</div>
+            <div id="gameDetailMsg" class="message-detail">🎯 Choose your weapon</div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="cricket-btn bat" id="batBtn"><span>🏏</span> BAT</button>
+            <button class="cricket-btn ball" id="ballBtn"><span>⚾</span> BALL</button>
+            <button class="cricket-btn stump" id="stumpBtn">
+                <div class="stump-icon" id="stumpSvgIcon"></div>
+                <span>STUMP</span>
+            </button>
+        </div>
+
+        <div class="game-footer">
+            <div class="round-counter">🎲 ROUNDS: <span id="roundCount">0</span></div>
+            <button class="reset-btn" id="resetGameBtn">🔄 NEW MATCH</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
